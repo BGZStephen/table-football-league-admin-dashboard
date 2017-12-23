@@ -1,0 +1,14 @@
+<div id="admin-dashboard-users" class="outlet-container">
+  <table *ngIf="users">
+    <thead>
+      <td>Email</td>
+      <td>First Name</td>
+      <td>Last Name</td>
+    </thead>
+    <tr *ngFor="let user of users">
+      <td><a routerLink="/admin/users/{{user._id}}">{{user.email}}</a></td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+    </tr>
+  </table>
+</div>
