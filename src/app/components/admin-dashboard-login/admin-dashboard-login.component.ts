@@ -33,7 +33,7 @@ export class AdminDashboardLoginComponent implements OnInit {
           localStorage.setItem('token', res['token']);
           localStorage.setItem('user', res['user']);
           this.globalService.notification.show({message: 'Login successful'});
-          this.globalService.redirection.delayed('/admin', 300);
+          this.globalService.redirection.delayed('/', 300);
         },
         error => {
           this.globalService.errorHandler.process(error);

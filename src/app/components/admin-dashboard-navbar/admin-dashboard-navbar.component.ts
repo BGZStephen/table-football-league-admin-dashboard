@@ -18,10 +18,10 @@ export class AdminDashboardNavbarComponent implements OnInit {
   ) {
     this.menuItems = [
       {name: 'Home', iconClass: 'fa fa-home fa-2x', link: '/admin'},
-      {name: 'Fixtures', iconClass: 'fa fa-calendar fa-2x', link: '/admin/fixtures'},
-      {name: 'Teams', iconClass: 'fa fa-users fa-2x', link: '/admin/teams'},
-      {name: 'Leagues', iconClass: 'fa fa-list-alt fa-2x', link: '/admin/leagues'},
-      {name: 'Users', iconClass: 'fa fa-cog fa-2x', link: '/admin/users'},
+      {name: 'Fixtures', iconClass: 'fa fa-calendar fa-2x', link: '/fixtures'},
+      {name: 'Teams', iconClass: 'fa fa-users fa-2x', link: '/teams'},
+      {name: 'Leagues', iconClass: 'fa fa-list-alt fa-2x', link: '/leagues'},
+      {name: 'Users', iconClass: 'fa fa-cog fa-2x', link: '/users'},
       {name: 'Logout', iconClass: 'fa fa-power-off fa-2x', clickAction: this.onLogout},
     ]
   }
@@ -71,7 +71,7 @@ export class AdminDashboardNavbarComponent implements OnInit {
     this.globalService.notification.show({message: 'Logout successful'})
     localStorage.removeItem('user');
     localStorage.removeItem('token');
-    this.router.navigate(['/admin/login']);
+    this.router.navigate(['/login']);
   }
 
 }
