@@ -1,3 +1,22 @@
 <div id="admin-dashboard-teams" class="outlet-container">
-
+  <div class="row">
+    <div class="col-md-12">
+      <table *ngIf="teams">
+        <thead>
+          <td>Name</td>
+          <td>W</td>
+          <td>L</td>
+          <td>G/F</td>
+          <td>G/A</td>
+        </thead>
+        <tr *ngFor="let team of teams">
+          <td><a routerLink="/teams/{{team._id}}">{{team.name}}</a></td>
+          <td>{{team.wins}}</td>
+          <td>{{team.losses}}</td>
+          <td>{{team.goalsScored}}</td>
+          <td>{{team.goalsConceded}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </div>

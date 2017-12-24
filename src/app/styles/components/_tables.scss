@@ -1,0 +1,31 @@
+table {
+  color: white;
+  thead {
+    td {
+      background: $primary-black-400;
+      padding: 10px 15px;
+    }
+  }
+
+  tr:nth-of-type(even) {
+    background: $primary-black-400;
+  }
+
+  tr:nth-of-type(odd) {
+    background: $primary-black-600;
+  }
+
+  tr {
+    td {
+      padding: 10px 15px;
+
+      a {
+        color: white;
+
+        &:hover {
+          color: $primary-yellow-600;
+        }
+      }
+    }
+  }
+}
