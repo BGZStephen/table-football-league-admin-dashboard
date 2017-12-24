@@ -1,3 +1,21 @@
 <div id="admin-dashboard-fixtures" class="outlet-container">
-
+  <div class="row">
+    <div class="col-md-12">
+      <table *ngIf="fixtures.length > 0">
+        <thead>
+          <td>Teams</td>
+          <td>Type</td>
+          <td>Played</td>
+          <td>Score</td>
+        </thead>
+        <tr *ngFor="let fixture of fixtures">
+          <td><a routerLink="/fixtures/{{fixture._id}}">{{fixture.teams.home}} V {{fixture.teams.away}}</a></td>
+          <td>{{fixture.type}}</td>
+          <td>{{fixture.played ? 'Yes' : 'No'}}</td>
+          <td *ngIf="fixture.played">{{fixture.score.homeTeam}} - {{fixture.score.awayTeam}}</td>
+          <td *ngIf="!fixture.played">N/A</td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </div>
