@@ -7,14 +7,14 @@ import * as components from 'app/components/components-barrel';
 @NgModule({
   declarations: [
     components.AdminDashboardHomeComponent,
-    components.AdminDashboardNavbarComponent,
+    components.NavbarComponent,
     components.AdminDashboardLoginComponent,
     components.AdminDashboardTeamsComponent,
     components.FixturesViewComponent,
     components.AdminDashboardLeaguesComponent,
-    components.AdminDashboardUsersComponent,
+    components.UsersViewComponent,
     components.ViewWrapperComponent,
-    components.AdminDashboardUserComponent,
+    components.UserViewComponent,
   ],
   imports: [
     CommonModule,

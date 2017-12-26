@@ -3,10 +3,10 @@ import { GlobalService } from 'app/services/global.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-admin-dashboard-navbar',
-  templateUrl: './admin-dashboard-navbar.component.html',
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
 })
-export class AdminDashboardNavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit {
 
   currentSubmenuActive: number = -1;
   menuVisible: boolean = false;

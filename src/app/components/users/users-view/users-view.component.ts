@@ -3,10 +3,10 @@ import { ApiService } from 'app/services/api.service';
 import { GlobalService } from 'app/services/global.service';
 
 @Component({
-  selector: 'app-admin-dashboard-users',
-  templateUrl: './admin-dashboard-users.component.html',
+  selector: 'app-users-view',
+  templateUrl: './users-view.component.html',
 })
-export class AdminDashboardUsersComponent implements OnInit {
+export class UsersViewComponent implements OnInit {
 
   users: Array<object>;
 

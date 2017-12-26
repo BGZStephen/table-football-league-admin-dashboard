@@ -10,8 +10,8 @@ const APP_ROUTES: Routes = [
     {path: 'teams', component: components.AdminDashboardTeamsComponent},
     {path: 'leagues', component: components.AdminDashboardLeaguesComponent},
     {path: 'fixtures', component: components.FixturesViewComponent},
-    {path: 'users', component: components.AdminDashboardUsersComponent},
-    {path: 'users/:id', component: components.AdminDashboardUserComponent},
+    {path: 'users', component: components.UsersViewComponent},
+    {path: 'users/:id', component: components.UserViewComponent},
   ], canActivate: [AuthGuard]},
 ]
 
