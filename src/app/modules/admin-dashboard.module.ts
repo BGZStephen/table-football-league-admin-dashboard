@@ -2,19 +2,19 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutes } from 'app/app.routes';
-import * as adminDashboard from 'app/components/admin-dashboard-components-barrel';
+import * as components from 'app/components/components-barrel';
 
 @NgModule({
   declarations: [
-    adminDashboard.AdminDashboardHomeComponent,
-    adminDashboard.AdminDashboardNavbarComponent,
-    adminDashboard.AdminDashboardLoginComponent,
-    adminDashboard.AdminDashboardTeamsComponent,
-    adminDashboard.AdminDashboardFixturesComponent,
-    adminDashboard.AdminDashboardLeaguesComponent,
-    adminDashboard.AdminDashboardUsersComponent,
-    adminDashboard.AdminDashboardViewWrapperComponent,
-    adminDashboard.AdminDashboardUserComponent,
+    components.AdminDashboardHomeComponent,
+    components.AdminDashboardNavbarComponent,
+    components.AdminDashboardLoginComponent,
+    components.AdminDashboardTeamsComponent,
+    components.FixturesViewComponent,
+    components.AdminDashboardLeaguesComponent,
+    components.AdminDashboardUsersComponent,
+    components.ViewWrapperComponent,
+    components.AdminDashboardUserComponent,
   ],
   imports: [
     CommonModule,

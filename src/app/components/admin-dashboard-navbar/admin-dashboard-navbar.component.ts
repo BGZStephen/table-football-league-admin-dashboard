@@ -17,7 +17,7 @@ export class AdminDashboardNavbarComponent implements OnInit {
     private router: Router,
   ) {
     this.menuItems = [
-      {name: 'Home', iconClass: 'fa fa-home fa-2x', link: '/admin'},
+      {name: 'Home', iconClass: 'fa fa-home fa-2x', link: '/'},
       {name: 'Fixtures', iconClass: 'fa fa-calendar fa-2x', link: '/fixtures'},
       {name: 'Teams', iconClass: 'fa fa-users fa-2x', link: '/teams'},
       {name: 'Leagues', iconClass: 'fa fa-list-alt fa-2x', link: '/leagues'},

@@ -3,10 +3,10 @@ import { ApiService } from 'app/services/api.service';
 import { GlobalService } from 'app/services/global.service';
 
 @Component({
-  selector: 'app-admin-dashboard-fixtures',
-  templateUrl: './admin-dashboard-fixtures.component.html',
+  selector: 'app-fixtures-view',
+  templateUrl: './fixtures-view.component.html',
 })
-export class AdminDashboardFixturesComponent implements OnInit {
+export class FixturesViewComponent implements OnInit {
 
   fixtures: Array<object>;
 

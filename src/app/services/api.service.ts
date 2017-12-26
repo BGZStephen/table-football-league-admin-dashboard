@@ -49,7 +49,7 @@ export class ApiService {
     },
 
     getAll: () => {
-      const callParams = {type: 'get', url: '/admin/admin/teams'}
+      const callParams = {type: 'get', url: '/admin/teams'}
       return this.apiCall(callParams);
     },
 
