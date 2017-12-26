@@ -9,6 +9,7 @@ import * as components from 'app/components/components-barrel';
     components.HomeViewComponent,
     components.NavbarComponent,
     components.LoginViewComponent,
+    components.LoginFormComponent,
     components.TeamsViewComponent,
     components.FixturesViewComponent,
     components.LeaguesViewComponent,

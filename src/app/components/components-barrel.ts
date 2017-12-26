@@ -7,3 +7,4 @@ export { UsersViewComponent } from './users/users-view/users-view.component';
 export { UserViewComponent } from './users/user-view/user-view.component';
 export { LoginViewComponent } from './login/login-view/login-view.component';
 export { ViewWrapperComponent } from './view-wrapper/view-wrapper.component'
+export { LoginFormComponent } from './login/login-form/login-form.component';

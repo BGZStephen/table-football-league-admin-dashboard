@@ -1,4 +1,4 @@
-#admin-dashboard-login {
+#login-view {
   .heading-container {
     align-items: center;
     color: #DDD;
@@ -10,44 +10,5 @@
   #login-form-container {
     margin: 0 auto;
     max-width: 420px;
-    .form-row {
-      i {
-        color: $primary-yellow-400;
-        position: absolute;
-        left: 5px;
-        width: 25px;
-        text-align: center;
-      }
-
-      button {
-        margin: 20px auto 10px auto;
-      }
-
-      input {
-        transition: 0.3s ease all;
-
-        &:focus {
-          border: 1px solid $primary-yellow-800;
-        }
-      }
-
-      &.useful-links-container {
-        flex-direction: column;
-
-        a, p {
-          color: #BBB;
-          cursor: pointer;
-          font-size: 0.8em;
-          margin-bottom: 10px;
-          text-align: center;
-          transition: 0.3s ease all;
-
-          &:hover {
-            color: $primary-yellow-400;
-          }
-        }
-      }
-    }
-
   }
 }
