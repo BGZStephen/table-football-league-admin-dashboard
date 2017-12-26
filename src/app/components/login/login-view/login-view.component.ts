@@ -3,10 +3,10 @@ import { ApiService } from 'app/services/api.service';
 import { GlobalService } from 'app/services/global.service';
 
 @Component({
-  selector: 'app-admin-dashboard-login',
-  templateUrl: './admin-dashboard-login.component.html',
+  selector: 'app-login-view',
+  templateUrl: './login-view.component.html',
 })
-export class AdminDashboardLoginComponent implements OnInit {
+export class LoginViewComponent implements OnInit {
 
   formValues = {
     email: {

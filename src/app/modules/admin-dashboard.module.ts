@@ -6,12 +6,12 @@ import * as components from 'app/components/components-barrel';
 
 @NgModule({
   declarations: [
-    components.AdminDashboardHomeComponent,
+    components.HomeViewComponent,
     components.NavbarComponent,
-    components.AdminDashboardLoginComponent,
-    components.AdminDashboardTeamsComponent,
+    components.LoginViewComponent,
+    components.TeamsViewComponent,
     components.FixturesViewComponent,
-    components.AdminDashboardLeaguesComponent,
+    components.LeaguesViewComponent,
     components.UsersViewComponent,
     components.ViewWrapperComponent,
     components.UserViewComponent,

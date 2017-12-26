@@ -3,31 +3,32 @@ import { ApiService } from 'app/services/api.service';
 import { GlobalService } from 'app/services/global.service';
 
 @Component({
-  selector: 'app-admin-dashboard-teams',
-  templateUrl: './admin-dashboard-teams.component.html',
+  selector: 'app-leagues-view',
+  templateUrl: './leagues-view.component.html',
 })
-export class AdminDashboardTeamsComponent implements OnInit {
+export class LeaguesViewComponent implements OnInit {
 
-  teams: Array<object>;
+  leagues: Array<object>;
 
   constructor(
     private api: ApiService,
-    private globalService: GlobalService,
+    private globalService: GlobalService
   ) { }
 
   ngOnInit() {
-    this.getAllTeams();
+    this.getAllLeagues()
   }
 
-  getAllTeams() {
-    this.api.teams.getAll()
+  getAllLeagues() {
+    this.api.leagues.getAll()
     .subscribe(
       res => {
-        this.teams = res;
+        this.leagues = res;
       },
       error => {
         this.globalService.errorHandler.process(error);
       }
     )
   }
+
 }
